@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- Code Credit to CodingNepal www.codingnepalweb.com for the awesome tutorial-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- Player select -->
+  <div class="player-select-box">
+    <header>
+      TIC <br> TAC <br> TOE
+    </header>
+    <div class="content">
+        <div class="player-select-question">
+          Select human player's symbol
+        </div>
+        <div class="player-select-options">
+          <button class="playerX"> 
+            X
+          </button>
+          <button class="playerO"> 
+            O
+          </button>
+        </div>
+    </div>
+  </div>
+
+  <!-- Game proper -->
+  <div class="game-board">
+    <div class="details">
+      <div class="players">
+        <span class="XTurn">
+          X's Turn
+        </span>
+        <span class="OTurn">
+          O's Turn
+        </span>
+        <div class="slider"></div>
+      </div>
+    </div>
+
+    <div class="game-area">
+      <section>
+        <span class="tile1" data-column="0" data-row="0"></span>
+        <span class="tile2" data-column="1" data-row="0"></span>
+        <span class="tile3" data-column="2" data-row="0"></span>
+      </section>
+      <section>
+        <span class="tile4" data-column="0" data-row="1"></span>
+        <span class="tile5" data-column="1" data-row="1"></span>
+        <span class="tile6" data-column="2" data-row="1"></span>
+      </section>
+      <section>
+        <span class="tile7" data-column="0" data-row="2"></span>
+        <span class="tile8" data-column="1" data-row="2"></span>
+        <span class="tile9" data-column="2" data-row="2"></span>
+      </section>
+    </div>
+  </div>
+
+  <!-- End game result -->
+  <div class="result-box">
+    <div class="win-message">
+      Player <p>X</p> has won the match!
+    </div>  
+    <div class="restart">
+      <button>
+        restart
+      </button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+
+</body>
+</html>
